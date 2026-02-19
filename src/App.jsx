@@ -9,7 +9,7 @@ const App = () => {
   const handleGenerate = async () => {
     setLoading(true);
 
-    const backendUrl = import.meta.env.VITE_BACKEND || 'http://127.0.0.1:8000'
+    const backendUrl = import.meta.env.VITE_BACKEND || 'http://127.0.0.1:8001'
 
     try {
       const res = await fetch(`${backendUrl}/generate`, {
