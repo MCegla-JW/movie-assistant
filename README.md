@@ -1,6 +1,8 @@
 ## Movie Night Suggestion 🎬
 A simple full-stack web app that helps you decide what movie to watch. Enter a list of movies you're considering, and the AI will pick one for you, provide a synopsis, and suggest the perfect snack pairing.
 
+For backend Python code head here - [Backend Repo](https://github.com/MCegla-JW/movie-assistant-backend) 
+
 ## Features
 - 🤖 AI-powered movie recommendations using Google's Gemini API
 - 📝 Movie synopsis generation
