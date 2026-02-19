@@ -1,16 +1,33 @@
-# React + Vite
+## Movie Night Suggestion 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack web app that helps you decide what movie to watch. Enter a list of movies you're considering, and the AI will pick one for you, provide a synopsis, and suggest the perfect snack pairing.
+Features
 
-Currently, two official plugins are available:
+AI-powered movie recommendations using Google's Gemini API
+Movie synopsis generation
+Snack pairing suggestions
+Clean, responsive UI with Markdown-formatted responses
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+Backend: FastAPI (Python)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend: React + Vite
 
-## Expanding the ESLint configuration
+AI: Google Gemini 2.5 Flash
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: Inline CSS
+
+## Setup
+
+Clone the repository
+
+Install backend dependencies: pip install fastapi pydantic google-generativeai python-dotenv uvicorn
+
+Install frontend dependencies: npm install
+
+Create a .env file with your GEMINI_API_KEY
+
+Run backend: uvicorn main:app --reload
+
+Run frontend: npm run dev
